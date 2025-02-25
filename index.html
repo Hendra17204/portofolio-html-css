@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        background: linear-gradient(to right, #8360c3, #2ebf91);
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        color: black;
+      }
+      .navbar {
+        background: rgba(255, 255, 255, 0.8) !important;
+        border-radius: 10px;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        color: #2ebf91 !important;
+      }
+      .nav-link {
+        color: #8360c3 !important;
+      }
+      .btn-primary {
+        background-color: #2ebf91;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #27a97c;
+      }
+      .portfolio-item {
+        transition: transform 0.3s;
+      }
+      .portfolio-item:hover {
+        transform: scale(1.05);
+      }
+      .portfolio-box {
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Portfolio</a>
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#AboutMe">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="Home" class="row mt-4 align-items-center">
+        <div class="col-md-6">
+          <h2>Selamat Datang di Website Saya</h2>
+          <p>Tempat saya menunjukkan karya dan pengalaman saya.</p>
+          <a href="#" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="bg-light d-flex align-items-center justify-content-center" style="width: 100%; height: 240px; border-radius: 10px; border: 2px dashed #ccc">
+            <span style="color: gray">600 × 400</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="AboutMe" class="text-center mt-5">
+        <h3>About Me</h3>
+        <p>Sedikit tentang saya</p>
+        <div class="row">
+          <div class="col-md-4 p-2"><button class="btn btn-light w-100">Hendra Gunawan Sinaga</button></div>
+          <div class="col-md-4 p-2"><button class="btn btn-light w-100">Education</button></div>
+          <div class="col-md-4 p-2"><button class="btn btn-light w-100">Mahasiswa</button></div>
+          <div class="col-md-4 p-2"><button class="btn btn-light w-100">085764959071</button></div>
+          <div class="col-md-4 p-2"><button class="btn btn-light w-100">Renang</button></div>
+          <div class="col-md-4 p-2"><button class="btn btn-light w-100">Jambi</button></div>
+        </div>
+      </div>
+
+      <div id="Portfolio" class="text-center mt-5">
+        <h3>Portofolio</h3>
+        <div class="row">
+          <div class="col-md-4 p-2 portfolio-item">
+            <div class="portfolio-box">
+              <img src="proyek1.png" alt="Proyek 1" class="img-fluid rounded" />
+              <h5 class="mt-2">Proyek 1</h5>
+              <p>Deskripsi proyek 1.</p>
+            </div>
+          </div>
+          <div class="col-md-4 p-2 portfolio-item">
+            <div class="portfolio-box">
+              <img src="proyek2.png" alt="Proyek 2" class="img-fluid rounded" />
+              <h5 class="mt-2">Proyek 2</h5>
+              <p>Deskripsi proyek 2.</p>
+            </div>
+          </div>
+          <div class="col-md-4 p-2 portfolio-item">
+            <div class="portfolio-box">
+              <img src="proyek3.png" alt="Proyek 3" class="img-fluid rounded" />
+              <h5 class="mt-2">Proyek 3</h5>
+              <p>Deskripsi proyek 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
